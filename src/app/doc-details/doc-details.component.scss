@@ -1,0 +1,101 @@
+@import './../../assets/scss/variables';
+
+.file-info{
+    margin:  $space-default 0 ;
+    border-radius: $space-default;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: $shadow-deep-primary;   
+    
+    @media screen and (min-width: 800px) {
+        background: #fff;
+        padding: $space-default;
+        grid-template-columns: 1fr 2fr;
+    }
+    .file-atributes,
+    .file-properties{
+        @media screen and (min-width: 800px) {
+            margin:  0 ;
+        }
+        
+        h2{
+            font-weight: 400;
+            padding-left: calc(#{$space-default} * 2);
+        }
+    }
+    .file-atributes{
+        background: white;
+        
+        border-bottom-left-radius: calc(#{$space-default} / 2);
+        border-bottom-right-radius: calc(#{$space-default} / 2);
+        form{
+
+            background-color: rgba($color-primary-blue, 0.1);
+            margin: $space-default;
+        }
+        
+    }
+    .file-properties{
+        background: $color-secondary-blue;
+
+        @media screen and (min-width: 800px) {
+            background: white;
+            h2{
+                color: black;
+            }
+        }
+        border-top-left-radius: calc(#{$space-default} / 2);
+        border-top-right-radius: calc(#{$space-default} / 2);
+        h2{
+            color: #fff;
+            padding-top: 20px;
+            @media screen and (min-width: 800px) {
+                color: #000;
+                padding-top: 0;
+            }
+        }
+        form{
+            margin:  $space-default;
+            background-color: $color-primary-yellow;
+        }
+    }
+}
+
+
+.separator{
+    background-color: $color-secondary-blue;
+    height: calc(#{$space-default});
+    position: relative;
+    &:before,
+    &:after{
+        display: block;
+        content: "";
+        height: calc(#{$space-default} / 2);
+        background: white;
+        position: absolute;
+        top: calc(#{$space-default} / 2);
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        border-top-right-radius: calc(#{$space-default} / 2);
+    }
+    &:after {
+
+        top: 0;
+        background: $color-secondary-blue;
+        // background: red;
+        transform: scaleXY(-1);
+        border-top-right-radius: 0;
+        border-bottom-left-radius: calc(#{$space-default} / 2);
+        width: calc(#{$space-default} / 2);
+
+    }
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+    .inner{
+        background: white;
+        width: calc(#{$space-default} / 2);
+        height:  calc(#{$space-default} / 2);
+    }
+}
