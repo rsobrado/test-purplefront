@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DocDetailsComponent } from './document-detail/document-detail.component'
+import { DocDetailsComponent } from './document-detail/document-detail.component';
+
 
 
 import { 
@@ -29,12 +31,13 @@ import { from } from 'rxjs';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatDatepickerModule,
     MatInputModule,
     MatFormFieldModule,
     MatNativeDateModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
 
   ],
   providers: [],
