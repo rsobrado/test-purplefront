@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-doc-details',
-  templateUrl: './doc-details.component.html',
-  styleUrls: ['./doc-details.component.scss']
+  selector: 'app-document-detail',
+  templateUrl: './document-detail.component.html',
+  styleUrls: ['./document-detail.component.scss']
 })
 export class DocDetailsComponent implements OnInit {
 

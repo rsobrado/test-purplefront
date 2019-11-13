@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DocDetailsComponent } from './doc-details/doc-details.component'
+import { DocDetailsComponent } from './document-detail/document-detail.component'
 
 
 import { 
@@ -13,7 +13,8 @@ import {
           MatInputModule,
           MatNativeDateModule ,
           MatFormFieldModule,
-          MatIconModule
+          MatIconModule,
+
         } from '@angular/material';
 import { from } from 'rxjs';
 
