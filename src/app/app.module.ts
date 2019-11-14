@@ -5,27 +5,33 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DocDetailsComponent } from './document-detail/document-detail.component';
-
-
 
 import { 
-          MatDatepickerModule,
-          MatButtonModule,
-          MatInputModule,
-          MatNativeDateModule ,
-          MatFormFieldModule,
-          MatIconModule,
+  MatDatepickerModule,
+  MatButtonModule,
+  MatInputModule,
+  MatNativeDateModule ,
+  MatFormFieldModule,
+  MatIconModule,
+  MatListModule,
+  MatMenuModule
+  
+} from '@angular/material';
 
-        } from '@angular/material';
-import { from } from 'rxjs';
+import { DocDetailsComponent } from './document-detail/document-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DocumentListComponent } from './document-list/document-list.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DocDetailsComponent
+    DocDetailsComponent,
+    DashboardComponent,
+    DocumentListComponent,
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +44,10 @@ import { from } from 'rxjs';
     MatNativeDateModule,
     MatButtonModule,
     MatIconModule,
+    MatListModule,
+    MatMenuModule
+
+
 
   ],
   providers: [],
