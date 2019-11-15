@@ -12,10 +12,6 @@
         }
     }
     .file-atributes{
-        background: white;
-        border-bottom-left-radius: calc(#{$space-default} / 2);
-        border-bottom-right-radius: calc(#{$space-default} / 2);
-
         button{
 
             &:hover{

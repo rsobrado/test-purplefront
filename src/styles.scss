@@ -103,17 +103,12 @@ h1{
     
 }
 
-.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 5px 0 !important;
-}
 
 .panel{
     border-radius: $space-default;
     box-shadow: $shadow-deep-primary;   
     display: grid;
-    margin:  $space-default 0 ;
+    margin:  $space-default 0 calc(#{$space-default} * 1.5);
     grid-template-columns: 1fr;
     
     @media screen and (min-width: 800px) {
@@ -124,6 +119,24 @@ h1{
     h2{
         font-weight: 400;
         padding-left: calc(#{$space-default} * 2);
+    }
+    .pane{
+        &-left{
+            background: $color-secondary-blue;
+            border-top-left-radius: calc(#{$space-default} / 2);
+            border-top-right-radius: calc(#{$space-default} / 2);
+            @media screen and (min-width: 800px) {
+                background: transparent;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+        &-right{
+            border-bottom-left-radius: calc(#{$space-default} / 2);
+            border-bottom-right-radius: calc(#{$space-default} / 2);
+            background: white;
+        }
+
     }
 }
 
